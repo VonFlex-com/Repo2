@@ -1,0 +1,290 @@
+
+
+
+
+/*  ================   Style Global   ==============================   */
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+
+
+html,
+body {
+
+    margin: 0;
+    padding: 0;
+    background: #ffffff444444;
+}
+
+.innermenu {
+
+    width: 90%;
+    margin: auto;
+
+}
+
+.entetetoto {
+
+    height: 200px;
+    -background-color: white;
+    -border: 1px solid black;
+
+}
+
+
+
+.borderB {
+    border: 1px solid black;
+}
+
+.borderRound {
+    border-radius: 10px;
+
+}
+
+
+
+.partietext {
+
+    height: 100%;
+}
+
+
+
+/* Make the image fully responsive */
+.carousel-inner img {
+
+
+
+
+
+    width: 100%;
+    height: auto;
+
+}
+
+.ombre {
+
+    box-shadow: 0px 0px 40px rgb(0, 0, 0),
+        0px 0px 5px rgb(255, 255, 255);
+
+}
+
+.textGris {
+
+    color: rgb(119, 119, 119);
+}
+
+
+.textBlanc {
+
+    color: rgb(241, 241, 241);
+}
+
+.BA {
+
+    padding: auto;
+
+}
+
+.noneSL {
+    white-space: nowrap;
+}
+
+.hauteurpageaccueil {
+
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.couleurFooter{
+
+background-color: black
+
+}
+
+ul.zPos{
+
+z-index: 1;
+
+}
+
+.basPage{
+display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.souligne{
+    text-decoration: underline;
+}
+
+.calendar{
+
+width: 90%;
+
+}
+.hauteurfactice{
+height: 600px;
+
+}
+.largeurIMG{
+   max-width: 100%;
+}
+
+
+
+
+
+
+
+/*======================    Style       =====================*/
+/*======================    Prix        =====================*/
+
+.bg-gradient {
+    background: #C9D6FF;
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); 
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+    } 
+    ul li {
+      margin-bottom:1.4rem;
+    }
+    .pricing-divider {
+    border-radius: 20px;
+    background: rgba(198, 69, 69, 0.452);
+    padding: 1em 0 4em;
+    position: relative;
+    }
+    .blue .pricing-divider{
+    background: rgba(45, 88, 114, 0.452); 
+    }
+    .green .pricing-divider {
+    background: rgba(26, 168, 92, 0.452); 
+    }
+    .red b {
+      color:#C64545
+    }
+    .blue b {
+      color:#2D5772
+    }
+    .green b {
+      color:#1AA85C
+    }
+    .pricing-divider-img {
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 80px;
+    }
+    .deco-layer {
+        -webkit-transition: -webkit-transform 0.5s;
+        transition: transform 0.5s;
+    }
+    .btn-custom  {
+      background:#C64545; color:#fff; border-radius:20px
+    }
+    
+    .img-float {
+      width:50px; position:absolute;top:-3.5rem;right:1rem
+    }
+    
+    .princing-item {
+      transition: all 150ms ease-out;
+    }
+    .princing-item:hover {
+      transform: scale(1.05);
+    }
+    .princing-item:hover .deco-layer--1 {
+      -webkit-transform: translate3d(15px, 0, 0);
+      transform: translate3d(15px, 0, 0);
+    }
+    .princing-item:hover .deco-layer--2 {
+      -webkit-transform: translate3d(-15px, 0, 0);
+      transform: translate3d(-15px, 0, 0);
+    }
+    
+    
+    
+
+
+
+
+
+
+  /*====================== FIN          =====================*/
+/*====================== PRIX =====================*/
+
+
+
+
+/*====================== Debut  style         =====================*/
+/*====================== Reseaux Sociaux =====================*/
+
+
+.heading {
+    border-bottom: 3px solid #ddd;
+}
+
+.twitter-hover {
+    background-image: url('https://lut.im/SRoUJUn7V4/cORSlFIVBlR7M8Zv.png');
+
+}
+
+.facebook-hover {
+    background-image: url('https://lut.im/9LlTfOBMjB/ccPwdiudyoF3x1wE.png');
+}
+
+.google-hover {
+    background-image: url('https://lut.im/qGelLnYHZ3/dL1Hrnzyl7cMz14e.png');
+}
+
+.linkedin-hover {
+    /* background-image: url('https://lut.im/JNIybEyJDx/6gAE6YPt35e7qMAB.png'); */
+    background-image: url('../images/git7.png');
+}
+
+.pinterest-hover {
+    background-image: url('https://lut.im/fU1GnJ1cOw/d0iRmklZgk2l6o5W.png');
+}
+
+.instagram-hover {
+    background-image: url('https://lut.im/0LARg4VaCM/bWRJ8RbjK0r14RdO.png');
+}
+
+.tumblr-hover {
+    background-image: url('https://lut.im/wJDqfDmhLL/YZoci8VwKz37qwv4.png');
+}
+
+.reddit-hover {
+    background-image: url('https://lut.im/zfzy0kvZKw/BJBLoz6FyoLLFZGg.png');
+}
+
+.stumbleupon-hover {
+    background-image: url('https://lut.im/sdOPL3LP6d/VMRYTaE6cZxHa3Hq.png');
+}
+
+.social-slide {
+    height: 48px;
+    width: 48px;
+    margin: 5px;
+    float: right;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+.social-slide:hover {
+    background-position: 0px -48px;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.8);
+}
+
+
+/*====================== Reseaux Sociaux =====================*/
+/*======================   Fin           =====================*/

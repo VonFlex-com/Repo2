@@ -1,0 +1,262 @@
+/*=== Feuille de style CSS pour le site "BESTASSO" issue de la maquette ===*/
+
+/*========================Variables=========================*/
+a.m-link {
+	color: white;
+}
+
+a.m-link:hover {
+	text-decoration: none;
+}
+
+a.logo:hover {
+	text-decoration: none;
+}
+
+a.logo-center:hover {
+	text-decoration: none;
+}
+
+nav.menu, div.menu { 
+	main-text-color-1: rgb(0, 204, 204); 
+	main-text-color-2: rgb(251, 255, 0);
+	main-BG-color-1: rgb(44, 44, 44);
+	position:fixed ;
+	z-index: 3;
+	background-color: var(--main-BG-color-1);
+	background: linear-gradient(to bottom, #333, #333 95%, rgb(83, 83, 83));
+	border-radius: 0 0 20px 20px;
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	box-shadow: 0 0 20px rgb(0, 0, 0), 0 -1px 5px 0
+		rgba(255, 255, 255, 0.322) inset;
+	
+}
+
+
+/*.index {
+
+
+    position: absolute;
+
+}*/
+div.m-left {
+	float: left;
+	-border: 1px solid black;
+}
+
+a.m-right, div.m-right {
+	position: relative;
+	z-index: 3;
+	-border: 1px solid black;
+	float: right;
+	align-items: center;
+	-padding: 0 auto;
+	margin-right: 80px;
+}
+
+div.m-center {
+	display: none;
+	text-align: center;
+	-border: 1px solid black;
+}
+
+/*div.center {
+
+    margin: auto;
+
+}*/
+a.logo, a.logo-center {
+	-border: 1px solid black;
+	text-decoration: none;
+	margin: 0;
+	padding: 0px;
+	color: var(- -main-text-color-1); /* white;*/
+	text-transform: uppercase;
+	font-family: 'Roboto';
+	font-weight: 900;
+	font-size: 45px;
+	letter-spacing: 2px;
+	text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.border-TH {
+	border: 2px solid black;
+}
+
+a.logo:hover, a.logo-center:hover {
+	text-shadow: 0 0 5px var(- -main-text-color-2);
+	/*rgb(0, 0, 0);*/
+	color: var(- -main-text-color-1);
+}
+
+a.m-link, div.m-link {
+	text-decoration: none;
+	color: var(- -main-text-color-1); /*rgb(255, 255, 255);*/
+	text-transform: uppercase;
+	font-family: 'Lato';
+	font-weight: 600;
+	font-size: 12px;
+	letter-spacing: 0px;
+	margin-left: 20px;
+	border: 1px solid transparent;
+	-border: 1px solid black;
+	transition: all 0.3s ease-in-out;
+	padding: 3 0;
+	padding-right: 3;
+	padding-left: 0;
+	-text-shadow: 0px 1px 0px rgba(170, 252, 255, 0.849);
+	border: none;
+}
+/* a.m-link:hover, */
+a.m-link:hover {
+	-position: relative;
+	transition: all 0.3s ease-in-out;
+	padding-block-end: 5px;
+	padding-block-start: 5px;
+	border-radius: 3px;
+	background-color: var(- -main-text-color-1);
+	-box-shadow: 0 0 10px rgb(0, 0, 0);
+	box-shadow: 0 0 10px rgb(0, 0, 0), -1px -2px 3px 0
+		rgba(255, 255, 255, 0.774) inset, 1px 1px 2px 0 rgba(0, 0, 0, 0.582)
+		inset;
+	color: var(- -main-text-color-2);
+	padding: 14 3;
+	padding-left: 0;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.644);
+	border: none;
+}
+
+a.m-link i.fa {
+	margin-right: 3px;
+	-margin-top: 10px;
+	-margin-bottom: 20px;
+	font-size: 20px;
+	-border: 1px solid black;
+	padding: 5;
+	-border: none;
+}
+
+div.m-nav-toggle {
+	position: relative;
+	top: 0;
+	width: 60px;
+	height: 70px;
+	display: none;
+	align-items: center;
+	float: left;
+	cursor: pointer;
+	-border: 1px solid black;
+}
+
+div.m-nav-toggle:hover {
+	background-color: var(- -main-text-color-2);
+	border-radius: 0 0 20px 20px;
+	opacity: 0.85;
+	margin: 0;
+	padding: 0;
+}
+
+span.m-toggle-icon, span.m-toggle-icon:before, span.m-toggle-icon:after
+	{
+	content: "";
+	z-index: 4;
+	display: block;
+	height: 5px;
+	background: var(- -main-text-color-1); /* white;*/
+	position: relative;
+	border-radius: 2px;
+	-border: 1px solid black;
+}
+
+span.m-toggle-icon {
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 80%;
+}
+
+span.m-toggle-icon:before {
+	top: 13px
+}
+
+span.m-toggle-icon:after {
+	top: -18px
+}
+
+/*============== Menu pour mobile =====================*/
+@media only screen and (max-width: 1200px) {
+	a.m-link, div.m-link {
+		display: flex;
+		padding: 20 10;
+		height: 50px;
+		text-align: right;
+		align-items: center;
+		margin: 10px;
+		-border: 1px solid black;
+		border: none;
+	}
+	a.m-link:hover {
+		padding-block-end: 12px;
+		padding-block-start: 12px;
+		padding: 2 10;
+		border-radius: 3px;
+		background-color: var(- -main-text-color-1);
+		-box-shadow: 0 0 10px rgb(0, 0, 0);
+		color: var(- -main-text-color-2);
+		-padding-top: 10;
+		-padding-bottom: 10;
+		transition: all 0.3s ease-in-out;
+	}
+	a.m-link i.fa {
+		padding: 10 10;
+	}
+	div.m-right {
+		position: absolute;
+		z-index: 1;
+		transform: translateY(0%);
+		padding-top: 30px;
+		left: 0;
+		top: -450px;
+		width: auto;
+		height: auto;
+		background-color: var(- -main-BG-color-1);
+		-box-shadow: 5px 5px 10px rgb(0, 0, 0);
+		box-shadow: 0 0 20px rgb(0, 0, 0), 0 -1px 5px 0
+			rgba(255, 255, 255, 0.322) inset;
+		border-radius: 0 0 10px 0;
+		transition: all 0.3s ease-in-out;
+	}
+	div.m-right.is-open {
+		transform: translateY(490px);
+	}
+	div.m-nav-toggle {
+		display: flex;
+		position: absolute;
+		z-index: 3;
+		width: 80px;
+		-border: 1px solid black;
+		cursor: pointer;
+	}
+	div.m-left {
+		float: none;
+		margin: 0 auto;
+	}
+	a.logo-center {
+		display: flex;
+		margin: auto;
+		text-align: center;
+		transform: translate(20);
+		-border: 1px solid black;
+	}
+	div.m-center {
+		display: flex;
+		margin: auto 22%;
+		text-align: center;
+		-border: 1px solid black;
+	}
+	a.logo {
+		display: none;
+		text-align: center;
+	}
+}

@@ -1,0 +1,390 @@
+.bordureCW {
+	border: 2px solid red;
+	border-radius: 10px;
+}
+
+.footer {
+	height: auto;
+	background: black;
+	/*	border: 2px solid red;*/
+}
+
+.footer, .minHeight {
+	min-height: 95%;
+}
+
+.minHeight {
+	/*border: 2px solid red;*/
+	min-height: 95%;
+	padding-top: 100px;
+}
+
+.minHeight:after {
+	content: "";
+	display: block;
+}
+
+.logged {
+	color: #80ff00;
+	text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	color: gray;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	font-family: sans-serif;
+	background: #2f2f2f;  /*#202020*/
+	border: 2px solid red;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: linear-gradient(#202020 0%, black 100%);
+	padding: 10px 20px;
+}
+
+/* Tooltip container */
+.tooltip {
+	position: relative;
+	display: inline-block;
+
+	/*border-bottom: 1px dotted black;
+	 If you want dots under the hoverable text */
+}
+
+.souligner {
+	text-decoration: underline;
+	color: white;
+}
+
+.txtWhite {
+	color: white;
+}
+.txtWhite .souligner {
+	font-style:normal;	
+}
+.aDroite {
+	background:red;
+	text-align: center;
+	display: block;
+	
+	
+}
+.txtSizeLire a{
+	
+	font-size:30px;
+	font-style:normal;
+	color: white;
+}
+
+
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+	margin: 5px;
+	padding: 10px;
+	visibility: hidden;
+	width: 200px;
+	background-color: #444444;
+	text-justify: inter-character ;
+	text-align:justify;
+	border-radius: 3px;
+	top: 20px;
+	left: 105%;
+	/* Position the tooltip text - see examples below! */
+	position: absolute;
+	z-index: 1;
+	content: " ";
+	opacity: 0;
+	transition: all 0.7s ease-in-out;
+	font-size: 14px;
+	font-style: oblique;
+}
+
+.tooltip .tooltiptext::after {
+	display: block;
+	content: "";
+	position: absolute;
+	top: 10%;
+	left: 0;
+	margin-left: -10px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent #444444 transparent transparent;
+	transition: all 0.3s ease-in-out;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+	text-justify: inter-character ;
+	text-align:justify;
+	display: block; margin : 10px;
+	padding: 10px;
+	color: white;
+	background-color: #444444;
+	visibility: visible;
+	justify-content: space-around;
+	box-sizing: border-box;
+	opacity: 1;
+	transition: all 0.3s ease-in-out;
+	box-shadow: 0 0 5px black, 0 0 10px black, 0 0 20px black, 0 0 50px
+		black;
+	margin: 10px;
+	font-size: 14px;
+	font-style: oblique;
+}
+
+.imgRounded {
+	border-radius: 5px;
+	width: 100%;
+}
+.degradeTitre{
+	
+}
+
+.container {
+	width: 75%;
+	height: auto;
+	/*background: yellow;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-flow: wrap;
+}
+
+.box {
+	background: linear-gradient(transparent 80%, black 100%);
+	
+	justify-content: space-around;
+	width: 20%;
+	height: auto;
+	/*background: blue;*/
+	margin: 20px;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+@media screen and (max-width:1200px) {
+	.box {
+		width: 40%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width:620px) {
+	.box {
+		width: 90%;
+		height: auto;
+	}
+}
+
+ul {
+	list-style-type: none;
+}
+
+.ahref {
+	font-size: 16px;
+	padding: 20px;
+	color: gray;
+	text-decoration: none;
+	font-weight: bold;
+	border: none;
+	background-color: transparent;
+}
+
+.ahref:hover {
+	border: 0;
+	color: orange;
+	padding: 20px;
+	border: 0;
+	-moz-text-shadow: 0 0 20px red, 0 0 10px red;
+	-webkit-text-shadow: 0 0 20px red, 0 0 10px red;
+	text-shadow: 0 0 20px red, 0 0 10px red;
+}
+
+a {
+	font-size: 16px;
+	color: gray;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	color: orange;
+	text-shadow: 0 0 20px red, 0 0 10px red;
+}
+
+.logo a strong:hover {
+	color: orange;
+	text-shadow: 0 0 20px red;
+}
+
+.menuCW li {
+	font-size: 16px;
+	padding: 15px 5px;
+	white-space: nowrap;
+}
+
+li a:not(.logo) {
+	display: block;
+}
+
+.logo a strong {
+	font-size: 30px;
+	display: inline flex;
+}
+
+.logo a strong:hover {
+	font-size: 30px;
+}
+
+/*  menu mobile  */
+.menuCW {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.toggle {
+	order: 1;
+}
+
+.item.recherche {
+	order: 2;
+}
+
+.item.button {
+	order: 3;
+}
+
+.item {
+	width: 100%;
+	text-align: center;
+	order: 4;
+	display: none;
+}
+
+.item.active {
+	display: block;
+}
+
+.toggle {
+	cursor: pointer;
+}
+
+.toggle:hover>.bars, .toggle:hover>.bars::before, .toggle:hover>.bars::after
+	{
+	background: orange;
+	box-shadow: 0 0 5px red, 0 0 5px red;
+}
+
+.bars {
+	background: #999;
+	display: inline-block;
+	height: 2px;
+	position: relative;
+	top: -7px;
+	width: 22px;
+}
+
+.bars::before, .bars::after {
+	background: #999;
+	content: "";
+	display: inline-block;
+	height: 2px;
+	position: absolute;
+	width: 22px;
+}
+
+.bars::before {
+	top: 6px;
+}
+
+.bars::after {
+	top: -6px;
+}
+
+/*  menu tablette  */
+@media all and (min-width:620px) {
+	.menu {
+		justify-content: center;
+	}
+	.logo {
+		flex: 1;
+		margin-right: 0;
+	}
+	.item.button {
+		width: auto;
+		order: 1;
+		display: block;
+	}
+	.item.recherche {
+		width: auto;
+		order: 1;
+		display: block;
+	}
+	.toggle {
+		order: 2;
+	}
+	.button a {
+		padding: 7px 15px;
+		border: 1px solid gray;
+		border-radius: 4px;
+	}
+	.button a:hover {
+		border-color: orange;
+		box-shadow: 0 0 10px #ff7315;
+	}
+}
+
+/*  menu PC  */
+@media all and (min-width:935px) {
+	.item {
+		justify-content: center;
+		width: auto;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.type {
+		flex: 1 auto;
+		display: block;
+		justify-content: center;
+	}
+	.recherche {
+		
+	}
+	.button {
+		
+	}
+	.toggle {
+		display: none;
+	}
+	.logo {
+		order: 0;
+	}
+	.item {
+		order: 1;
+	}
+	.button {
+		order: 0;
+	}
+	.menuCW li {
+		padding: 15px 10px
+	}
+	.menuCW li.button {
+		padding-right: 10;
+	}
+}
